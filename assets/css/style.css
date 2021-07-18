@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url(../partials/_global.css);
+:root{
+    --base-font: "Roboto","Sans serif";
+    --prime-color:#4458dc;
+    --prime-color2:#854fee;
+    --title-color:#141343;
+    --text-color:#777777;
+    --border-color:#201f1f17;
+    --gradient-color:linear-gradient(90deg,#4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118,85,255,0.3);
+    --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+    
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+    box-sizing: border-box;    
+    -webkit-transition: all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+body{
+    font-family:var(--base-font);
+}
+a,a.active,a:hover{
+    text-decoration:none;
+}
+ul,ol{
+    list-style:none;
+}
+
+/********Header Css*********/
+.navbar-brand{
+    padding:0.2rem 0.5rem;
+}
+.main-menu .navbar{
+    padding:1rem 20rem;
+}
+header .main-menu .nav-item .nav-link{
+    text-transform: uppercase;
+    font:normal 500 15px/12px var(--base-font);
+    padding:1.7rem;
+    font-size:1.3rem;
+    color:var(--title-color);
+}
+
+.navbar-nav a.active{
+    background:var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
+    
+}
+.navbar-nav a:hover{
+    background:var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/********Header Css Ends*********/
+/********Banner Css*********/
+
+.main-site .site-banner{
+    background:url(../images/banner/home-banner.png) no-repeat 0% 50%;
+}
+.site-title{
+    padding-left:10rem;
+    padding-top:10%;
+    font-weight:500;
+}
+.site-title h3:after{
+    content:"";
+    height:2px;
+    width:18vw;
+    background:black;
+    display:inline-block;
+    margin-left:3%;
+    transform:translateY(-8px);
+}
+.site-title h1{
+    font-size:5rem;
+
+}
+.site-title h4{
+    font-size: 1.6rem;
+}
+.banner-img > img{
+    padding:7rem 0;
+    width:90rem;
+}
+
+/********Banner Css Ends*********/
+/********About Area Css*********/
+.my-para{
+    padding:8rem 5rem;
+}
+.my-para h2 span{
+    display:block;
+    font:normal bold 52px/62px var(--base-font);
+    letter-spacing: 21px;
+}
+.paragraph p{
+    padding:.4rem 0;
+}
+
+/********About Area Css Ends*********/
+/********Brands Area Csss*********/
+section.brands{
+    padding:1rem 10rem;
+    margin-bottom:4rem;
+}
+.first-row .col-lg-4{
+    display:flex;
+    justify-content:center;
+}
+.single-brand{
+    border:1px solid var(--border-color);
+    padding:2rem 0;
+    text-align:center;
+    margin:.9rem 0;
+    width:180px;
+    height:100px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.single-brand > img{
+    width:50%;
+}
+.single-brand:hover > img{
+   filter:brightness(0.15);
+}
+.single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform:scale(1,1);
+}
+.experience-area h2 span{
+    display:block;
+}
+.experience-area{
+    padding-left:1rem;
+    position:relative;
+}
+.experience-area .years-area{
+    background:url(../images/client-info-bg.png) no-repeat 45px 10px;
+    padding:3rem 0;
+    width:40rem;
+    height:18rem;
+    padding-left:13rem;
+    position:relative;
+}
+
+.experience-area .bg-panel{
+    position:absolute;
+    left:-190px;
+    top:0%;
+    background:#e029290a;
+    width:350px;
+    height:350px;
+    margin-left:340px;
+    z-index:-1;
+    
+}
+.experience-area h2.years{
+    font:normal bold 84px/40px var(--base-font);
+    color:var(--prime-color2);
+    z-index: 2;
+}
+.experience-area h2 > span{
+    font: normal 500 22px/30px var(--base-font);
+}
+.call-now{
+    font-size:1.3rem;
+    
+    padding-left:1rem;
+}
+.call-now a{
+    font-size:2rem;
+}
+.call-now span{
+    display:block;
+    
+}
+.call-area{
+    position:relative;
+    top:10rem;
+    left:18rem;
+    
+    
+    
+}
+/********Brands Area Css Ends*********/
+/********Services Area Css*********/
+.services-area{
+    padding:7rem 2rem;
+}
+.services-title{
+    padding:0 8rem;
+}
+.services-title h1{
+    font-size: 35px;
+    padding:1rem 0;
+}
+.services-title p{
+    line-height:1.8
+}
+.services-list{
+    padding:4rem 10rem;
+}
+.services{
+    background:rgba(248,252,253,0.9);
+    padding: 1rem;
+    margin:5rem .5rem;
+    transition:box-shadow .7s ease;
+}
+.services:hover{
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+.services .card-title{
+    font:normal 500 16px/25px var(--base-font);
+}
+
+/********Services Area Css Ends*********/
+/********ُProject Area Css*********/
+.projects{
+    padding:0 10rem;
+}
+.button-group button{
+    background:transparent;
+    border:none;
+    font:normal 500 16px/139px var(--base-font);
+}
+.button-group button + button{
+    padding-left:3rem;
+}
+.grid .title h4{
+    font:normal 700 20px/16px var(--base-font);
+}
+.project-img a:hover img {
+    filter:brightness(1,1) drop-shadow(1px 8px 30px #b1afaf) ;
+}
+.about-title p{
+    padding:1rem 7rem;
+}
+.client{
+    background:#fafafa;
+    padding:3rem;
+    margin:20px;
+    box-shadow: var(--box-shadow);
+}
+.about-client h4{
+    font:normal bold 16px/25px var(--base-font);
+    
+}
+.owl-carousel .owl-item{
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+.owl-dot .active{
+    background:var(--prime-color) !important;
+    width:12px;
+    height:12px;
+}
+
+/********ُProject Area Css Ends*********/
+/********ُUpper Footer Area Css*********/
+.subscribe-row{
+    background:url(../images/subscribe-bg.png) no-repeat;
+    width:100%;
+    min-height:50vh;
+}
+.subscribe-area {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    color:#fff;
+}
+.subscribe-title h1{
+    padding:2.5rem 0;
+    font:normal 700 22px/30px var(--base-font);
+}
+.subscribe-title p{
+    font:normal 400 20px/30px var(--base-font);
+    
+}
+.subscribe-form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.subscribe-form input {
+    background: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    width: 400px;
+    height: 4rem;
+    margin: 10px;
+}
+.subscribe-form input::placeholder{
+    color:#fff;
+    font:normal 20px/30px var(--base-font);
+}
+.subscribe-form .button-subscribe {
+    padding: .6rem 3rem;
+    background:whitesmoke;
+    color:#000;
+    font-size: 1.7rem;
+    outline:none;
+}
+.footer-area{
+ background:url(../images/footer-bg.png) no-repeat;
+ background-size:cover;
+}
+.footer-icons span {
+    margin: 0.5rem;
+    background: var(--prime-color);
+    padding: 1rem 1rem;
+    border-radius: 50%;
+    font-size: 2.3rem;
+    color: #fff;
+    cursor: pointer;
+}
+.footer-icons span:hover{
+    background: var(--prime-color2);
+    transform:scale(-1,1);
+}
+/********ُUpper Footer Area Css Ends*********/
+/********ُFooter Area Css*********/
+/********ُFooter Area Css Ends*********/

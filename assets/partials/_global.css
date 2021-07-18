@@ -1,0 +1,62 @@
+.text-uppercase{
+ text-transform: uppercase;
+}
+.title-text{
+    font:normal bold 50px/52px var(--base-font)  ;
+}
+
+.button{
+    padding:.8rem 2.2rem;
+    font:normal 500 16px/20px var(--base-font);
+    position:relative;
+ 
+
+}
+.button.primary-button{
+    background:var(--gradient-color);
+    background-clip: padding-box;
+    color:whitesmoke;
+    transition: all 0.5s ease;
+    box-shadow: var(--box-shadow);
+    
+}
+.button.primary-button:hover{
+    background-clip: padding-box;
+    background:whitesmoke;
+    color:#000;
+    border-width:3px;
+    border-style:solid;
+    border-image:var(--gradient-color);
+    border-image-slice: 1; 
+}
+
+.button.secondary-button{
+    background:whitesmoke;
+    background-clip: padding-box;
+    color:black;
+   
+    border-width:3px;
+    border-style:solid;
+    border-image: var(--gradient-color);
+    border-image-slice: 1;
+  
+    
+}
+.button.secondary-button:hover{
+    background:var(--gradient-color);
+    
+    color:whitesmoke;
+
+}
+p.para{
+ font:normal 500 16px/25px var(--base-font);
+ color:var(--text-color);   
+}
+
+.title-h1{
+    font:normal bold 39px/40px var(--base-font);
+    line-height: 1.3;
+}
+.pad-left{
+    padding:4rem 10rem;
+}
